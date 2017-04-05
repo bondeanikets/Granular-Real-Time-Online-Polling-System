@@ -7,12 +7,8 @@ end
 
 
 
-
-Then /^I should be on the "([^"]*)" page$/ do |user_name|
-   #print(user_name,"\n")
-    @user=User.find_by name: user_name
-    print(@user)
-    #visit user_path(@user.id)
+Then /^I should be on the confirmation page for$/ do 
+    visit '/signup'
 end
 
 Then(/^I should be on the Signup page for$/) do
