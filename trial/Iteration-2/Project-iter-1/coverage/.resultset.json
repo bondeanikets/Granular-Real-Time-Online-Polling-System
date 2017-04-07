@@ -176,10 +176,11 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
-    "timestamp": 1491430308
+    "timestamp": 1491608761
   },
   "RSpec": {
     "coverage": {
@@ -215,8 +216,8 @@
         null,
         null,
         1,
-        0,
-        0,
+        2,
+        2,
         null,
         null,
         null,
@@ -237,6 +238,39 @@
         null,
         null
       ],
+      "/home/ubuntu/workspace/Polling-Management-system/trial/Iteration-2/Project-iter-1/app/controllers/sessions_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        4,
+        2,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        2,
+        2,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/Polling-Management-system/trial/Iteration-2/Project-iter-1/app/controllers/application_controller.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/home/ubuntu/workspace/Polling-Management-system/trial/Iteration-2/Project-iter-1/app/controllers/users_controller.rb": [
         1,
         null,
@@ -249,7 +283,7 @@
         null,
         null,
         1,
-        2,
+        0,
         0,
         0,
         0,
@@ -262,20 +296,14 @@
         1,
         null,
         1,
-        2,
+        0,
         null,
         null,
-        null
-      ],
-      "/home/ubuntu/workspace/Polling-Management-system/trial/Iteration-2/Project-iter-1/app/controllers/application_controller.rb": [
-        1,
-        1,
-        1,
         null
       ],
       "/home/ubuntu/workspace/Polling-Management-system/trial/Iteration-2/Project-iter-1/app/models/user.rb": [
         1,
-        11,
+        17,
         1,
         1,
         1,
@@ -333,34 +361,8 @@
         0,
         0,
         0
-      ],
-      "/home/ubuntu/workspace/Polling-Management-system/trial/Iteration-2/Project-iter-1/app/controllers/sessions_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1491431425
+    "timestamp": 1491608821
   }
 }

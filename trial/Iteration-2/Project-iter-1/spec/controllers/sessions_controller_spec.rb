@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 
-describe UsersController do
+describe SessionsController do
     describe 'Login as an admin' do
         before :each do 
           @movie = FactoryGirl.create(:user, :name => "Richard", :email => "richarddoss0719@tamu.edu", :password => "123456") 
@@ -9,7 +9,8 @@ describe UsersController do
           @moviestwo=[@movie, @another_lucas_movie]
         end
         it 'calls the model method that logs in the user' do
-            post  :create, :session =>1, :password =>"123456", :email =>"richard@eample.org", :danger =>1
+            print("Testing")
+            post  :create, {:session => {:password =>"123456", :email =>"richard@eample.org"}, :danger =>1}
         end
         it 'calls the model method that logs out the user' do
             delete  :destroy

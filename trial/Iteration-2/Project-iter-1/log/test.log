@@ -6790,3 +6790,1363 @@ Processing by UsersController#show as HTML
   Rendered users/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms)
   [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$0s5OnBcKO50lc3aAu4c9sOtu5F7Kz85UMOmAUlSejBYkQIE39mRzq"], ["created_at", "2017-04-05 22:48:40.893914"], ["updated_at", "2017-04-05 22:48:40.893914"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$39vX85.hWdXbpcEjivbh7.MnP8Z8iEcBdabvo8CGAJBvxaGXkyrpG"], ["created_at", "2017-04-05 22:48:40.900441"], ["updated_at", "2017-04-05 22:48:40.900441"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+  Parameters: {"session"=>"1", "password"=>"[FILTERED]", "email"=>"richard@eample.org", "danger"=>"1"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$6G3UQegnb/6.c1HKz79bvuSBRaimxO3MUgELwvOuc3nh4xIwGsJQe"], ["created_at", "2017-04-05 22:48:40.916109"], ["updated_at", "2017-04-05 22:48:40.916109"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$uYQ5iTKUBvV3jaikPZOpr.Di6E/gP8H6XOFOoiwy9OKfs9zcGXUqW"], ["created_at", "2017-04-05 22:48:40.921931"], ["updated_at", "2017-04-05 22:48:40.921931"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$Dh/DuRWkiaKsdRZQKC9VjOZOAKB7xj2LCubfO57kmpSzifWFhC1Ta"], ["created_at", "2017-04-05 22:48:40.930773"], ["updated_at", "2017-04-05 22:48:40.930773"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$2cFEJ8aWMa0OnbInOsiDHexEci6LesB.MSEz8/Flr2IIr2wjdkXY6"], ["created_at", "2017-04-05 22:48:40.936558"], ["updated_at", "2017-04-05 22:48:40.936558"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$cWGA/wIey76ToJtuF2PJ4.Bwc1tXlRy0n1ilbnVgt0ttYC/8eqqhu"], ["created_at", "2017-04-05 22:48:40.947089"], ["updated_at", "2017-04-05 22:48:40.947089"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$za83Jd9ghZLp8KN7c.tPJOnC23KlLoPwLKA2r9ur/aiFtGGRzyOk2"], ["created_at", "2017-04-05 22:48:40.953024"], ["updated_at", "2017-04-05 22:48:40.953024"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 19.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$xYVQmqNs/1.XEp9VZepZj.VjZh6qhlOFYlR5nOEyufglFzGmhxT.2"], ["created_at", "2017-04-05 22:48:40.995744"], ["updated_at", "2017-04-05 22:48:40.995744"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$Z0c4ZoKkpOwErxqlKO7FeOtVGebp00ocWfplyiPI6ULWp.2RxAqJa"], ["created_at", "2017-04-05 22:48:41.001475"], ["updated_at", "2017-04-05 22:48:41.001475"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$hyyMEBSvtpthfJSlWEv5h.NKuYWwW18JV3qUJyKoSkidd3PqfPZxS"], ["created_at", "2017-04-05 22:53:42.771869"], ["updated_at", "2017-04-05 22:53:42.771869"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$Amj1YHAM48ZsHe0T1la6l.PphwINlREuMSeaLk2.5YjJJlbZXpEty"], ["created_at", "2017-04-05 22:53:42.776459"], ["updated_at", "2017-04-05 22:53:42.776459"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+  Parameters: {"session"=>"1", "password"=>"[FILTERED]", "email"=>"richard@eample.org", "danger"=>"1"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$nz1J7MoaAcmWl8FsubFpQOVSoaY9WO7qBenAxsMEo6w4cHU6p/77K"], ["created_at", "2017-04-05 22:53:42.786942"], ["updated_at", "2017-04-05 22:53:42.786942"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$SorHs/hwUBPPliYYoSNb1.CscXf/EM2rlkPtmpVUgBQluHvB0WwWe"], ["created_at", "2017-04-05 22:53:42.790728"], ["updated_at", "2017-04-05 22:53:42.790728"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$31KgKu9BnU1uvwfKJKIXKe/cJaPu8JMjirN5B1/sosF6EaHN9.Od."], ["created_at", "2017-04-05 22:53:42.796908"], ["updated_at", "2017-04-05 22:53:42.796908"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$SliSQ5JGqvqzSq7TaMofWuppq/01SMcLAEUhrPiSA5SxACaaAtt9u"], ["created_at", "2017-04-05 22:53:42.800836"], ["updated_at", "2017-04-05 22:53:42.800836"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$qBcjfmOHEZmMTndVQ8I0POh8jjljJdGKGLWvokU5MUo5UdUT.AF0O"], ["created_at", "2017-04-05 22:53:42.807724"], ["updated_at", "2017-04-05 22:53:42.807724"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$4JWaV0pfF60K4orP4gx86e8Yo0c.LPlcqa4wUw67AUGWkdDjLu3py"], ["created_at", "2017-04-05 22:53:42.811547"], ["updated_at", "2017-04-05 22:53:42.811547"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 12.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$PHZ1bG97W2m4bGtYJhQ2eeFBXC7IvvkTcYvbO2LfbLqn3tEXL/2MW"], ["created_at", "2017-04-05 22:53:42.839787"], ["updated_at", "2017-04-05 22:53:42.839787"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$9axniv.8V.Kklu6.ed57xuXudiHKyQn.gxtF95hgIcEOXEdBV0dsm"], ["created_at", "2017-04-05 22:53:42.843748"], ["updated_at", "2017-04-05 22:53:42.843748"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$EsWB3Q2poUBVnOW4fBdi/O.k8/rzz0tPyvLNQuxc8UtOfkn3ByhU."], ["created_at", "2017-04-05 22:59:28.977122"], ["updated_at", "2017-04-05 22:59:28.977122"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$lD1yRa3Ix1kba4Fiyty.b.xxMciSiDFSNBI3KNdJRteH5LCFwAnyO"], ["created_at", "2017-04-05 22:59:28.981223"], ["updated_at", "2017-04-05 22:59:28.981223"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$h/m9PooZs.VoE1fo7wIYSO3DuATvDhyqtt2AsjUlOAGwEPzZVRhfe"], ["created_at", "2017-04-05 22:59:28.986156"], ["updated_at", "2017-04-05 22:59:28.986156"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$K.soU9Nme4MBCOLZqFcsC.ZVEn72DL0kQDdzUBMa431t9zf1aTj2i"], ["created_at", "2017-04-05 22:59:28.989411"], ["updated_at", "2017-04-05 22:59:28.989411"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$YFikzw3BYLc2b3nCmK/0keAh/I30MBZQW/nWkMj7Ew0/pOkepg/YG"], ["created_at", "2017-04-05 22:59:28.996889"], ["updated_at", "2017-04-05 22:59:28.996889"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$7GwKCrq7mLY6nav8JK7/eeUErRuQ4T2mF1oh7bcVjUFaiqArsmB0u"], ["created_at", "2017-04-05 22:59:29.000304"], ["updated_at", "2017-04-05 22:59:29.000304"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$BJ0df4cH/EJFr2I3Plr1VeQb1PhYqAUGBwyOXN8kXG7I4m30oC8/W"], ["created_at", "2017-04-05 22:59:29.007097"], ["updated_at", "2017-04-05 22:59:29.007097"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$r1d68GPP8BXCvXWhoeWuoOyNlT3XZ4SKrRlYeJNqpCuQmhzIJnDua"], ["created_at", "2017-04-05 22:59:29.010865"], ["updated_at", "2017-04-05 22:59:29.010865"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$wnJ5hJOQ17kKghsps/BN3uWCXVkrrukkJB06uWrtPveKVI3bq1imW"], ["created_at", "2017-04-05 22:59:29.037724"], ["updated_at", "2017-04-05 22:59:29.037724"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$0ZTXCLDaVBxja2nWk578huU2F23/hyc2mOBPDcAIwGFFzcfuAgSyO"], ["created_at", "2017-04-05 22:59:29.041148"], ["updated_at", "2017-04-05 22:59:29.041148"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$mRn6AUTQRvSE6497ojT/QuFypHY8ZA3C8vMnV9VndImSO3pUu9uCG"], ["created_at", "2017-04-07 22:50:24.987189"], ["updated_at", "2017-04-07 22:50:24.987189"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$LLLpl2SN.WiiwwPSOR2K8eE2CTGs2nyilyUFhe0PGinjZiioGesf."], ["created_at", "2017-04-07 22:50:24.993243"], ["updated_at", "2017-04-07 22:50:24.993243"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$TswHnelSIB3LS95Nka7jXO0vQOpUYBOlt5PI3csw6Rfn5G0fqpHEm"], ["created_at", "2017-04-07 22:50:25.002150"], ["updated_at", "2017-04-07 22:50:25.002150"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$l93mK6VnlxUUKb5/1s.XmOoBG5y/pJJdhn2yXcHH/Ji22PWtXnZqW"], ["created_at", "2017-04-07 22:50:25.007281"], ["updated_at", "2017-04-07 22:50:25.007281"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$hK3yQnLcHL3QKB9AniMvi.XEnM/qIjBUZoa.plnd2CfRs8wtT1UGW"], ["created_at", "2017-04-07 22:50:25.017931"], ["updated_at", "2017-04-07 22:50:25.017931"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$UL470sFaBWC1OAF9qJ/AvOpualx6cKieulyXcVjLShjjWYieRRl5O"], ["created_at", "2017-04-07 22:50:25.022902"], ["updated_at", "2017-04-07 22:50:25.022902"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$1uxr3JeAUtxPdni77aHF2.GwK123XvDHyhtl4LZin/qrD7qV6erS6"], ["created_at", "2017-04-07 22:50:25.032139"], ["updated_at", "2017-04-07 22:50:25.032139"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$ruCidPW9d0wFzxOwUZsFgun5lpPsxmRRLVt1PCXNdsLndHVrDi2xe"], ["created_at", "2017-04-07 22:50:25.036593"], ["updated_at", "2017-04-07 22:50:25.036593"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$yREghQTyZAUc1jTIWK9Bsu3n08T5OlcW3EvA0s9n7OaCaFH5/9RBG"], ["created_at", "2017-04-07 22:50:25.078701"], ["updated_at", "2017-04-07 22:50:25.078701"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$VCX6hI./.nlktJYs3Lm8q.ZPjTN1eVb78bH9ZAoajULq/mmJGkqXG"], ["created_at", "2017-04-07 22:50:25.082527"], ["updated_at", "2017-04-07 22:50:25.082527"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$6RVLAPvbtKAqhx0zC5mQD.hLngfjOYI2IoI/NycZVFYE1aYMb3Nvq"], ["created_at", "2017-04-07 22:52:31.441588"], ["updated_at", "2017-04-07 22:52:31.441588"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$LkLLBqrx0YBC4W9l.zp0CuV144Yne3GPFj3CkOTbHtUTNMkNasDyi"], ["created_at", "2017-04-07 22:52:31.447697"], ["updated_at", "2017-04-07 22:52:31.447697"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$.t9CaGN9AapKSo7EGEbd7uZH/PTmi2X69TuAsK6JJ2bzR0PRHn0RO"], ["created_at", "2017-04-07 22:52:31.455563"], ["updated_at", "2017-04-07 22:52:31.455563"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$PDt4ZvAoi4ZJfgapo920uONUPTyRUk00hAEGF0Vtz0qR6MXTPkVLu"], ["created_at", "2017-04-07 22:52:31.460603"], ["updated_at", "2017-04-07 22:52:31.460603"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$V05hHqqglsvKTS.QYMeAAetPN9OZP0fKljczARigasDY7utkHJ.0O"], ["created_at", "2017-04-07 22:52:31.472400"], ["updated_at", "2017-04-07 22:52:31.472400"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$Pr3JbsPEifvsmplakeIf/euyvWMelW9F75AqD9emPRErGGnvIgE52"], ["created_at", "2017-04-07 22:52:31.477906"], ["updated_at", "2017-04-07 22:52:31.477906"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$CJOmKlOUEcrx.Sev6ydpGuqFZJTGmU4LyYh.3ySWJXPvJWC0lqQvW"], ["created_at", "2017-04-07 22:52:31.489035"], ["updated_at", "2017-04-07 22:52:31.489035"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$K.tJ45Qt0kvhMETtTYIxCulOpUbdytUQFuO/NKmytJsEre4UHaTSK"], ["created_at", "2017-04-07 22:52:31.494371"], ["updated_at", "2017-04-07 22:52:31.494371"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$EuFplZjwbr8KFmaZwtD7Ku1GTeq5/qSV.stWQnaUXb17zJhtTIoq6"], ["created_at", "2017-04-07 22:52:31.540213"], ["updated_at", "2017-04-07 22:52:31.540213"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$EdB9XZNqIcQu/3ZeV9ywhOkR9i5PHnpg.NkW8gRWlIwX/r7uD8XaC"], ["created_at", "2017-04-07 22:52:31.545449"], ["updated_at", "2017-04-07 22:52:31.545449"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$8RRts76YixNCn3uCZSG9ZurHzz1FTN2WzWxmxEn4dQc5kxNsfZi2S"], ["created_at", "2017-04-07 23:04:15.512122"], ["updated_at", "2017-04-07 23:04:15.512122"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$6lMmR/f476sO9/0sG7PlrOLuV6KdF4OVjDFRMERTzvq8Fyw5yL9MC"], ["created_at", "2017-04-07 23:04:15.516606"], ["updated_at", "2017-04-07 23:04:15.516606"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+  Parameters: {"session"=>"1", "password"=>"[FILTERED]", "email"=>"richard@eample.org", "danger"=>"1"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$ktPfqz2SRdosNS7L9.dSxOdLGN/zRc518W6v7i6RN.ik95USG9BhK"], ["created_at", "2017-04-07 23:04:15.527221"], ["updated_at", "2017-04-07 23:04:15.527221"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$Va/tRFU5JBcQTRpsJ3D9HuWLFGkMmcfaq1bPJm4r0BeLVRa3n7oXO"], ["created_at", "2017-04-07 23:04:15.531806"], ["updated_at", "2017-04-07 23:04:15.531806"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$auGI0g9IasO12cKhzD8H.efHwgnY3zaVLv27dJ0G32tN132H8B0K2"], ["created_at", "2017-04-07 23:04:15.538804"], ["updated_at", "2017-04-07 23:04:15.538804"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$ji1TOQmx7hEuPnB3XtBqSOpz6TMLBO2MUQUrOxmLSNJC3DKLG7mDG"], ["created_at", "2017-04-07 23:04:15.542786"], ["updated_at", "2017-04-07 23:04:15.542786"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$OnE7pJWpCH8WGMFbB89U.uRqWrWyDTMCK45D3FKXsNgV1gDPDghcq"], ["created_at", "2017-04-07 23:04:15.551803"], ["updated_at", "2017-04-07 23:04:15.551803"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$7HHiPAlXndaIvaluVNuyDOy1DKyl1vEhJshH8zlV2yg7/gIrlRGNu"], ["created_at", "2017-04-07 23:04:15.556850"], ["updated_at", "2017-04-07 23:04:15.556850"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$HIb.ntOeTCwyXD3QTsgR3O5ewZT1qUoZRnOWyBSZhot2pW46BqLsC"], ["created_at", "2017-04-07 23:04:15.597024"], ["updated_at", "2017-04-07 23:04:15.597024"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$G8bzCg49uMZ76Eq3RyZqYu8ARLUr1rwW7adXqJRfdjnL/pOOanH3a"], ["created_at", "2017-04-07 23:04:15.601149"], ["updated_at", "2017-04-07 23:04:15.601149"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$yr/iYjJiZONU4w.5YJh5queuaYFfLgV/FjYyAAm.ms5qKa9lK51hi"], ["created_at", "2017-04-07 23:10:08.449208"], ["updated_at", "2017-04-07 23:10:08.449208"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$oUWFWaVc6E1Fyj80RDTyH..2CD5p9zwIm2JNexOEjGfaBJDcIYBiK"], ["created_at", "2017-04-07 23:10:08.454537"], ["updated_at", "2017-04-07 23:10:08.454537"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+  Parameters: {"session"=>"1", "password"=>"[FILTERED]", "email"=>"richard@eample.org", "danger"=>"1"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$bO5zduVkI6iJQJkrfv99OueXLj9AYg5.hdL25IE4O//5z8jXo0RvC"], ["created_at", "2017-04-07 23:10:08.466394"], ["updated_at", "2017-04-07 23:10:08.466394"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$IM12sl6QK1VIFxY13mQCS.XdTiSgERECQuQSqdPZ26AIVDaReTNSG"], ["created_at", "2017-04-07 23:10:08.470976"], ["updated_at", "2017-04-07 23:10:08.470976"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$QSJTeMixDsw9lFpjxXJmxOlrGv/.uFs5Lb0LyQVd1irFKw7.SVktG"], ["created_at", "2017-04-07 23:10:08.476671"], ["updated_at", "2017-04-07 23:10:08.476671"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$SRobF8A29yXqiCL5wJBaK.U3iZvvaqh2i1S4PCN79GR1wlwc1MleK"], ["created_at", "2017-04-07 23:10:08.480539"], ["updated_at", "2017-04-07 23:10:08.480539"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$X33Y0OaSGz3D8GXs4uaBRupgQ4ASXyUz9osqAmkfVvKq9WBk9o2vS"], ["created_at", "2017-04-07 23:10:08.488071"], ["updated_at", "2017-04-07 23:10:08.488071"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$lnRhQRi1S.p4WojDNOPqcOXwLGo0DRzE29ENS0jN/2IsV1iap4Buy"], ["created_at", "2017-04-07 23:10:08.493052"], ["updated_at", "2017-04-07 23:10:08.493052"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$EmywtgTsp3JXkIitOi4FFOYM3R46JX1hCF46zL.4B0nqZBaZvfRtu"], ["created_at", "2017-04-07 23:10:08.531292"], ["updated_at", "2017-04-07 23:10:08.531292"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$qDbjYuHyu4XIxTiBLgmBo.fygybSPi3.YNoDMj510YspRxuBm55Hu"], ["created_at", "2017-04-07 23:10:08.536592"], ["updated_at", "2017-04-07 23:10:08.536592"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$vX63zGiQ6Lea0s5xtistr.wlA5y9L7mLTW6tBV0lWwD9mauplJteu"], ["created_at", "2017-04-07 23:11:26.137793"], ["updated_at", "2017-04-07 23:11:26.137793"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$x5.QTbbBwoAkZyTChfEr8.09EQLL8yev.erU3cUZiyCu5bXIzjKLW"], ["created_at", "2017-04-07 23:11:26.142095"], ["updated_at", "2017-04-07 23:11:26.142095"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+  Parameters: {"session"=>"1", "password"=>"[FILTERED]", "email"=>"richard@eample.org", "danger"=>"1"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$Cz.oG5DYb85VplNp6MZ/3uEONVIRgatWeD5PrbKN62jkNA6k92/pe"], ["created_at", "2017-04-07 23:11:26.151731"], ["updated_at", "2017-04-07 23:11:26.151731"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$0lajjHGIRMVm1RvebUSYz.gyVG1dfGqqx/woBkCXgf.1qfjU4n3Zm"], ["created_at", "2017-04-07 23:11:26.155112"], ["updated_at", "2017-04-07 23:11:26.155112"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$gNCVQqhRyTCB3vwpbNoBCeIP3zu5MqLphEdaaRS0/D13Xx8Pe8aUO"], ["created_at", "2017-04-07 23:11:26.160246"], ["updated_at", "2017-04-07 23:11:26.160246"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$70vhEeoUNDUJFbPrxSDMCeEuHJMFvUrZFPdjN4yxcKNkl30tbq3aS"], ["created_at", "2017-04-07 23:11:26.163705"], ["updated_at", "2017-04-07 23:11:26.163705"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$wqonhIKv7DYIsFFr2aBsGequY5ey6MueUfzu0n6LSDQ78xIRvjQMK"], ["created_at", "2017-04-07 23:11:26.170251"], ["updated_at", "2017-04-07 23:11:26.170251"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$H/Wn6dSKRwUaEUZLw4Xfee7FBLTddPq.6vjMSxECEdWfMVP291Bh6"], ["created_at", "2017-04-07 23:11:26.174093"], ["updated_at", "2017-04-07 23:11:26.174093"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$3RdPEK1RMOUjK6JeFv2RDOGLxjoe3fxu6K5FJ.IT1PUb71nkFP49u"], ["created_at", "2017-04-07 23:11:26.201273"], ["updated_at", "2017-04-07 23:11:26.201273"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$utWrY0HOq9.j1oMIEOwTb.rwzgpkkNkJ3uTR4K.JtC/GqPFlXrk12"], ["created_at", "2017-04-07 23:11:26.205080"], ["updated_at", "2017-04-07 23:11:26.205080"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$Ke/CKwaiA/YN20mbbMnzjeOvEotnSbCMqMEp4QdhXIW6t2yqcXmC."], ["created_at", "2017-04-07 23:15:47.407969"], ["updated_at", "2017-04-07 23:15:47.407969"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$suFwJVgdgpRa8movL0Nk3eeiK9ZXoZ1/EfMDTCaHFRgJXB.d585q."], ["created_at", "2017-04-07 23:15:47.412262"], ["updated_at", "2017-04-07 23:15:47.412262"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"richard@eample.org"}, "danger"=>"1"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$AxKQUybQ6IZ52YPYZESokOXQ2D/BGHku8ixW2rXJZY0wi8JLQeGNC"], ["created_at", "2017-04-07 23:15:47.422378"], ["updated_at", "2017-04-07 23:15:47.422378"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$3CYHMs4WyJqUFkguCo6BFOTbN4aLfrpRW6vOOL6puMZliZWPpgq0a"], ["created_at", "2017-04-07 23:15:47.426178"], ["updated_at", "2017-04-07 23:15:47.426178"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$eVX3B/roGCex308Oxgg9DOsW.IgOWo/Mgr1vfofHRQ4o2PD1VQoW2"], ["created_at", "2017-04-07 23:15:47.431997"], ["updated_at", "2017-04-07 23:15:47.431997"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$v13LyczMEHFbG1/Wc1B4H.kJ.66y0TPtctfXiJRESQefDurX7LICa"], ["created_at", "2017-04-07 23:15:47.435572"], ["updated_at", "2017-04-07 23:15:47.435572"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$/FdFS80mm9/GhKME7tcj8uU2IW0yXwL2RlUvvCF89AhHsh9ZzMMsq"], ["created_at", "2017-04-07 23:15:47.442411"], ["updated_at", "2017-04-07 23:15:47.442411"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$FozN15vvskj5xPaw9N73e.On8jLS1hNdBpOO2oDdd5fUuiiMlkluO"], ["created_at", "2017-04-07 23:15:47.446184"], ["updated_at", "2017-04-07 23:15:47.446184"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$oK7/A0wtp081qhw5qN9KfeqcExpH1Cr8EKO6jTvb/6PnOkSyNyzJu"], ["created_at", "2017-04-07 23:15:47.480458"], ["updated_at", "2017-04-07 23:15:47.480458"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$F8uk5fMRpoyKwYQ6HMZlt./WStHgtKd5oV3f7uZ6JLoxn2sdp7fkW"], ["created_at", "2017-04-07 23:15:47.485057"], ["updated_at", "2017-04-07 23:15:47.485057"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$ptRSEWPh0E2Wc9yJm.eZGOQ8QYF7tp4gKdeFgGis2kGVcRXmw37Xu"], ["created_at", "2017-04-07 23:22:05.337855"], ["updated_at", "2017-04-07 23:22:05.337855"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$ZCAiJQ.mPrREdTbCp4cpC.1Uz9BXC5ZAetQOSh.IqWktrshWylp5."], ["created_at", "2017-04-07 23:22:05.342433"], ["updated_at", "2017-04-07 23:22:05.342433"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"richard@eample.org"}, "danger"=>"1"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$0gMcAxjzSbnBO3U2lciNfeypBlhynTVicqlTJ4SagJdCgmJRBpXJa"], ["created_at", "2017-04-07 23:22:05.353198"], ["updated_at", "2017-04-07 23:22:05.353198"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$kj2KBStCjticABYuuwrR8OSydSUYTGfE4wELfIhYVWreO0PP7rQye"], ["created_at", "2017-04-07 23:22:05.357938"], ["updated_at", "2017-04-07 23:22:05.357938"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$m1v83X7VM53jEb108g2JX.BnrtFmSLGPsFgkf/aHIqxYDLh7p/jCW"], ["created_at", "2017-04-07 23:22:05.363836"], ["updated_at", "2017-04-07 23:22:05.363836"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$hSNSonjS51f.gwuRBEClJehVupQI/HwOD1Plh27LxK13cOoLHUWJa"], ["created_at", "2017-04-07 23:22:05.367900"], ["updated_at", "2017-04-07 23:22:05.367900"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$dhJG6t7y58N4Av83MMeZ4OW57Q3WjtsP8d5P77zt0YJrCbhH8dYiW"], ["created_at", "2017-04-07 23:22:05.374804"], ["updated_at", "2017-04-07 23:22:05.374804"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$hi3FmHFw3j1FxfHnHVZDo.x6sfkkWh1VIchqRkAz0kfsR6dgwgnra"], ["created_at", "2017-04-07 23:22:05.378580"], ["updated_at", "2017-04-07 23:22:05.378580"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$qOXFiNyep/RppkYegWeCouhgO5q8KYyevp8M4V8X3twultlW6d6gm"], ["created_at", "2017-04-07 23:22:05.408220"], ["updated_at", "2017-04-07 23:22:05.408220"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$x1bMkyNei8d2A5maQ6SmVumuwc1sPVZRZKjW5AuoqArTJBOHBruQe"], ["created_at", "2017-04-07 23:22:05.412135"], ["updated_at", "2017-04-07 23:22:05.412135"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$NKCGsNutWlCl6sbw116ZC.Ic8.VI3IkDnHC.msOH75HpKoCU6S4Xq"], ["created_at", "2017-04-07 23:22:51.053084"], ["updated_at", "2017-04-07 23:22:51.053084"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$8rbAb59RrONmuMRV.nv5fe5N.0oKfu2zX1QLVuvnbcs2FQ/ukRWq."], ["created_at", "2017-04-07 23:22:51.058627"], ["updated_at", "2017-04-07 23:22:51.058627"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"richard@eample.org"}, "danger"=>"1"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$PnDXa288OADmQtH5Gf1bd..khAwHLvFNvHeLOGQFrP2L1Uz8CLuvy"], ["created_at", "2017-04-07 23:22:51.072848"], ["updated_at", "2017-04-07 23:22:51.072848"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$4xKRJzmiu81ZsKLO9FjWNevCouXuq2yauD.Acsz.uOMGapQQRrwlS"], ["created_at", "2017-04-07 23:22:51.077667"], ["updated_at", "2017-04-07 23:22:51.077667"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$f/51GTWT59pIim2TUg3PzucYtLwNjFzMYXL1QlLGP4hHrTZTAAyhm"], ["created_at", "2017-04-07 23:22:51.085296"], ["updated_at", "2017-04-07 23:22:51.085296"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$YVlf0.TSr9cTJxy0D31UeeFDTnQhM/flV3CAs/w3uDzCm3083UuiW"], ["created_at", "2017-04-07 23:22:51.090152"], ["updated_at", "2017-04-07 23:22:51.090152"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$ObeWxHJfjy7fLB.0AvnMi.K1sMmszAwqikllqBGzyRz/QS942fu4y"], ["created_at", "2017-04-07 23:22:51.099371"], ["updated_at", "2017-04-07 23:22:51.099371"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$CWx4Kp9AtYbPNAuG0V9I8O/vyvgnUpHHv1lgBzY/ln4zTM55gA08e"], ["created_at", "2017-04-07 23:22:51.104199"], ["updated_at", "2017-04-07 23:22:51.104199"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$A3HrwZBjlXZJokRI1k0MouCiFCfoIT1eK9wy5VO77GlQipHdrLVwi"], ["created_at", "2017-04-07 23:22:51.136422"], ["updated_at", "2017-04-07 23:22:51.136422"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$AyKTnZenOKn8yaGKHuEdlOkg3YBCY5gZnJDfBeVO1BXkiPE/gJGBC"], ["created_at", "2017-04-07 23:22:51.140372"], ["updated_at", "2017-04-07 23:22:51.140372"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$wkdbIBSqpMMBNstwRJH5jeA0uy2P/NVQMcqjuHaS2hOdM.aWzujpu"], ["created_at", "2017-04-07 23:27:44.528889"], ["updated_at", "2017-04-07 23:27:44.528889"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$Z1ukmuu.8W1COeO6iqf32uPD1p.P5i52Np/za1EL11rrDHM1y8Jom"], ["created_at", "2017-04-07 23:27:44.533144"], ["updated_at", "2017-04-07 23:27:44.533144"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"richard@eample.org"}, "danger"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "richard@eample.org"]]
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$k1t22ynixLJM1kgSBAPTceNoJd15ve9tz0Uyw/l3K.2GpFFcr.zem"], ["created_at", "2017-04-07 23:27:44.568618"], ["updated_at", "2017-04-07 23:27:44.568618"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$RwQkuVP4KMDaL.NoD3erpu8UpCTyBvGIFYt6XFTyWePLW.AFEBWSC"], ["created_at", "2017-04-07 23:27:44.572451"], ["updated_at", "2017-04-07 23:27:44.572451"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$DkW5h2pxUKlz9mxrD8mhCuROzfNlFmUcSQu.qJAfTjICV8X5a.dfa"], ["created_at", "2017-04-07 23:27:44.579329"], ["updated_at", "2017-04-07 23:27:44.579329"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$jaJC3Gi6woXH4mrdPL5LlO8UryTpU4peY7QjY1exLpGn69TMmMB2W"], ["created_at", "2017-04-07 23:27:44.582946"], ["updated_at", "2017-04-07 23:27:44.582946"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$FpH7AKDGb0T8.Z5KhZSR..ZyFwSG48sAupyXemfUbxco8PKqWH9hW"], ["created_at", "2017-04-07 23:27:44.590621"], ["updated_at", "2017-04-07 23:27:44.590621"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$lsi2/7VQkudhzrFMJJWzk.qM/nuNrNZzl/CoxQBILCzmeIbIB6qSi"], ["created_at", "2017-04-07 23:27:44.594300"], ["updated_at", "2017-04-07 23:27:44.594300"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$.GGbammSg8FI4E1eqA4xl.2iSqjeeKN9JudF4TXhbmXX4ndxrPCeC"], ["created_at", "2017-04-07 23:27:44.606897"], ["updated_at", "2017-04-07 23:27:44.606897"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$bx7qHiVkvKPWvDB36GiowONQPNsk1LLettwajdUTFpXPA/984p8A2"], ["created_at", "2017-04-07 23:27:44.610639"], ["updated_at", "2017-04-07 23:27:44.610639"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$ywwFmk9HLyPArYQ5vXPYEu5wijLOkU2w0rTQuvI93gE5CK2Up4kHa"], ["created_at", "2017-04-07 23:38:37.076578"], ["updated_at", "2017-04-07 23:38:37.076578"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithin"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$2j5kIp6LqXPwwJyaXuKW8u8HA0Ls/hkOn4oqwGWIaEtXd2Q39NfA2"], ["created_at", "2017-04-07 23:38:37.082200"], ["updated_at", "2017-04-07 23:38:37.082200"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/" for 127.0.0.1 at 2017-04-07 23:38:37 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (427.0ms)
+  Rendered layouts/_rails_default.html.erb (2.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (9.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 491ms (Views: 473.7ms | ActiveRecord: 0.2ms)
+Started GET "/signup" for 127.0.0.1 at 2017-04-07 23:38:37 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered users/new.html.erb within layouts/application (475.2ms)
+  Rendered layouts/_rails_default.html.erb (1.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 486ms (Views: 485.5ms | ActiveRecord: 0.2ms)
+Started GET "/signup" for 127.0.0.1 at 2017-04-07 23:38:38 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_rails_default.html.erb (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+Started POST "/signup" for 127.0.0.1 at 2017-04-07 23:38:38 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Richard", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered shared/_error_messages.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+Started GET "/signup" for 127.0.0.1 at 2017-04-07 23:38:38 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_rails_default.html.erb (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+Started GET "/signup" for 127.0.0.1 at 2017-04-07 23:38:38 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_rails_default.html.erb (1.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$D5Z53tklEeoRq..WfoTvXewuOsbFqTSeIGOWpgsn4Z9O/pFCsalb."], ["created_at", "2017-04-07 23:40:03.140922"], ["updated_at", "2017-04-07 23:40:03.140922"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$hYY2zqJpSZQBCyxxTgfRp.75VX9j14D1RbvKBQrti9f1xeaX0nOQK"], ["created_at", "2017-04-07 23:40:03.146015"], ["updated_at", "2017-04-07 23:40:03.146015"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"richard@eample.org"}, "danger"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "richard@eample.org"]]
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$qym8F3PvIoYazyi7J7PL0uBtvzoqhbHR4.vhm/dAsWt5.0m5tkgmC"], ["created_at", "2017-04-07 23:40:03.185976"], ["updated_at", "2017-04-07 23:40:03.185976"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$C009dG5WZ4lv5yuBnaHV3e6cDP8iTvLWiiT7arTBZQNCVjyidhYQ2"], ["created_at", "2017-04-07 23:40:03.191621"], ["updated_at", "2017-04-07 23:40:03.191621"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$H24Q0C329Ixc6eH8dX8be.XDFQ0shYbsMvI/EtC4z3sq0M9cQc3bu"], ["created_at", "2017-04-07 23:40:03.200101"], ["updated_at", "2017-04-07 23:40:03.200101"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$zs5ihvQI1cYrwTtzE3kX7.mnsXq5Iwhvd/MiSubrRUCeQf/Eft/oS"], ["created_at", "2017-04-07 23:40:03.204162"], ["updated_at", "2017-04-07 23:40:03.204162"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$9/00Bc47q4AFcqN6b5ap2eeL/zDbC40xmLQYfTT7eMD1al.SxTeem"], ["created_at", "2017-04-07 23:40:03.213159"], ["updated_at", "2017-04-07 23:40:03.213159"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$9GsY2qO4MWT7ZT3ZHVrn9eZjhhqIwVdk7MiljKfIwYPJ2Y7hBBKpK"], ["created_at", "2017-04-07 23:40:03.217575"], ["updated_at", "2017-04-07 23:40:03.217575"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$PsPoMZX/FVoh2QKGlkXUfeROFIqVRIkfm1S/K7etVDK56L2Mp3fva"], ["created_at", "2017-04-07 23:40:03.233912"], ["updated_at", "2017-04-07 23:40:03.233912"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$UqBFRit5KAGyer.0hPTt9eJo9ojED.a29RVIxo.jgTI39zaroaTa2"], ["created_at", "2017-04-07 23:40:03.238794"], ["updated_at", "2017-04-07 23:40:03.238794"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$02d4VaiFlJ3yRcf32.x/te2ukOPrlRopyxTplnV.xdEog4Vt6m7qG"], ["created_at", "2017-04-07 23:40:49.009348"], ["updated_at", "2017-04-07 23:40:49.009348"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$DjyPugTLuO.CruYFYiHElelUq4bT.fYEPQEpuRNrA2F2Rov6otPqa"], ["created_at", "2017-04-07 23:40:49.013839"], ["updated_at", "2017-04-07 23:40:49.013839"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"richard@eample.org"}, "danger"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "richard@eample.org"]]
+  Rendered sessions/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$qFNyMFG794FS8j2EmwcHvuSFYrWVdv5luZBzMdOdVd1QAesgPq7Q."], ["created_at", "2017-04-07 23:40:49.046582"], ["updated_at", "2017-04-07 23:40:49.046582"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$XhSXkZPKxrJYK0vt.l23TOJOjnfm6CRwpg42M23MfQeewTKnx5uRS"], ["created_at", "2017-04-07 23:40:49.051890"], ["updated_at", "2017-04-07 23:40:49.051890"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$S3.dEdICBX58xjfm7LNnheAOg3Nz083MSJtlEKVeALlr5m7Pokpm6"], ["created_at", "2017-04-07 23:40:49.061559"], ["updated_at", "2017-04-07 23:40:49.061559"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$QnK9yShxRkC3GdzTmI5ebutG.DwKSkXOSJck01XuFu068EQOWyApi"], ["created_at", "2017-04-07 23:40:49.066270"], ["updated_at", "2017-04-07 23:40:49.066270"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$brFdoEoNI0NZpVlw/yAOousTX6DPELBCz.S8xr93vQ8r/gLvOz4h2"], ["created_at", "2017-04-07 23:40:49.077555"], ["updated_at", "2017-04-07 23:40:49.077555"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$6TY33ZEqNV3/iqomtB14iOq5zcpWOvFnA/D4k6UHATF4O4Lq4op3G"], ["created_at", "2017-04-07 23:40:49.082598"], ["updated_at", "2017-04-07 23:40:49.082598"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$jdSIwb9xlNEkZOmfIbQlWuNHjYMYjTU3p1f1a8CULT8MlLPB2xmq."], ["created_at", "2017-04-07 23:40:49.100314"], ["updated_at", "2017-04-07 23:40:49.100314"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$8bFAP1EELBTR4vCw3lJZYe3YZsEv6iYhpCAyyj9pnuQnqV6KT/m6G"], ["created_at", "2017-04-07 23:40:49.105674"], ["updated_at", "2017-04-07 23:40:49.105674"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$4aE7gMP5z..o5/0.98G4rOtS0mjvl1FVsTVQ2fAXnjJR8s1Z2R.DG"], ["created_at", "2017-04-07 23:40:49.117388"], ["updated_at", "2017-04-07 23:40:49.117388"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$2nUGNJBuaN8Cv2oEIAZQS.VMUFTTch1b3uVL1CBA2pNZYuQlhIz7u"], ["created_at", "2017-04-07 23:40:49.122528"], ["updated_at", "2017-04-07 23:40:49.122528"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"richard@eample.org"}, "danger"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "richard@eample.org"]]
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$K5dnc.QBddzkHSK.arF7xufadOzba3/22S1XGjsuYDThSQgJ0enXu"], ["created_at", "2017-04-07 23:40:49.133853"], ["updated_at", "2017-04-07 23:40:49.133853"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$xN269QzZEheFF6jl1XL70uk0xeDrpJifLqBZC396mkPUtQmYv01L."], ["created_at", "2017-04-07 23:40:49.138920"], ["updated_at", "2017-04-07 23:40:49.138920"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (4.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$ZemqoWYhuiNRWtkGyaOlXOFwMI8N/P1mE9PgR5CHtpGNvAygKgf/a"], ["created_at", "2017-04-07 23:40:49.152169"], ["updated_at", "2017-04-07 23:40:49.152169"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$g3v5voT2B4.jDQMUVT.zheDPeKbcjBSeHsdmr7ZfiLpN.JTgRDmLS"], ["created_at", "2017-04-07 23:40:49.157514"], ["updated_at", "2017-04-07 23:40:49.157514"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$QvpQqhmwGAp9NAotCTpbTePX8DaEqybW3Wtu4A5cUgU5yzoPTWPUi"], ["created_at", "2017-04-07 23:44:48.538291"], ["updated_at", "2017-04-07 23:44:48.538291"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$zJgVp/NosMpVY1bEZ.4kI.JZ/Q1n1B3cyp3xouVNKCYClbOcFYAcK"], ["created_at", "2017-04-07 23:44:48.544267"], ["updated_at", "2017-04-07 23:44:48.544267"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"richard@eample.org"}, "danger"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "richard@eample.org"]]
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$Dh8OG7MSDhAFsIMlAVgHxOaRdMe2bk.dmD2O4cE9I8L8nItUdFZ9q"], ["created_at", "2017-04-07 23:44:48.584936"], ["updated_at", "2017-04-07 23:44:48.584936"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$FRYPzf3jwgUwli00xmTBRuvEmDis6hE04ub8beRG0VmOmmN5i6pQm"], ["created_at", "2017-04-07 23:44:48.589354"], ["updated_at", "2017-04-07 23:44:48.589354"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$.oQBxwwquCA7RZ3InwrifujdYqio85/wGm3eTj2nTH6/3XOg5/LgW"], ["created_at", "2017-04-07 23:44:48.597442"], ["updated_at", "2017-04-07 23:44:48.597442"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$4Z4JYVsO1gc0KbDGh48EI.nvi/ea6GctjEjcqpC/n1CleDcc2n7Wm"], ["created_at", "2017-04-07 23:44:48.601677"], ["updated_at", "2017-04-07 23:44:48.601677"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$hTqGNqJADypkmpCDbazCtOu11n9LQbJ4HgHbk6pcuRon5aOxJ6Dk2"], ["created_at", "2017-04-07 23:44:48.611123"], ["updated_at", "2017-04-07 23:44:48.611123"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$qqqbwF14ZNE5nkSDl523S.SOVFoKQ/bS.RVOn95oCDgaVtKiUyOEW"], ["created_at", "2017-04-07 23:44:48.615870"], ["updated_at", "2017-04-07 23:44:48.615870"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$pysIR0SwJPoSPJvqBlE6nuPd.MWzFM/G7AluelIDU3vo1SPC7o6F6"], ["created_at", "2017-04-07 23:44:48.631257"], ["updated_at", "2017-04-07 23:44:48.631257"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$xcJisQ660/5gg/R6Xgcg0uSKTirNRAyrGuCBlGJsUyovi2sLTCr/u"], ["created_at", "2017-04-07 23:44:48.635756"], ["updated_at", "2017-04-07 23:44:48.635756"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$SEva/54diW9AtRIXmvnL8uFTaNqT/kB8eK4/Ds7.cSRiCv1SQ4boy"], ["created_at", "2017-04-07 23:44:48.645656"], ["updated_at", "2017-04-07 23:44:48.645656"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$A0P10yJmMKeu6zfIcrEuo.CD9VU3ddzZ/9SFjJqL/7r1QaElzoOay"], ["created_at", "2017-04-07 23:44:48.650764"], ["updated_at", "2017-04-07 23:44:48.650764"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"richard@eample.org"}, "danger"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "richard@eample.org"]]
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$QYKYa.lYpdaAj3XJbT4IVuzcBdiltkSWSjcwg4UbPAFLOEMAdcuSO"], ["created_at", "2017-04-07 23:44:48.662643"], ["updated_at", "2017-04-07 23:44:48.662643"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$gDW95Uk2r0edqFhaOsObd.jf7mlEJwbgp1rbohzHryJDc8fbHYHUi"], ["created_at", "2017-04-07 23:44:48.667550"], ["updated_at", "2017-04-07 23:44:48.667550"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$v.w6V.MlItLXdlSY2GMKVO3vBnwdobSMDXxV7LS4s2/WV6eklGEl6"], ["created_at", "2017-04-07 23:44:48.676601"], ["updated_at", "2017-04-07 23:44:48.676601"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$uvx6huYo9I9xWZ.Cd9nip.2Mhf6bwByB8hMM6/wR6DRBBpJHM2o8q"], ["created_at", "2017-04-07 23:44:48.681001"], ["updated_at", "2017-04-07 23:44:48.681001"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$cblmE.2Jpuci7/vHE.MuK.6ekCVI5Gd3REvIKhU0/H7mCl4I7UQtO"], ["created_at", "2017-04-07 23:46:00.607637"], ["updated_at", "2017-04-07 23:46:00.607637"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithin"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$NXk.Z0pPQ7cL650lolDahuZLBJFw75TDOu5wiw1p5H/YnVo8umhE6"], ["created_at", "2017-04-07 23:46:00.611951"], ["updated_at", "2017-04-07 23:46:00.611951"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/" for 127.0.0.1 at 2017-04-07 23:46:00 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (275.3ms)
+  Rendered layouts/_rails_default.html.erb (2.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (8.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 321ms (Views: 310.1ms | ActiveRecord: 0.2ms)
+Started GET "/signup" for 127.0.0.1 at 2017-04-07 23:46:00 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (384.5ms)
+  Rendered layouts/_rails_default.html.erb (1.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 397ms (Views: 395.6ms | ActiveRecord: 0.2ms)
+Started GET "/signup" for 127.0.0.1 at 2017-04-07 23:46:01 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (1.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+Started POST "/signup" for 127.0.0.1 at 2017-04-07 23:46:01 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Richard", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered shared/_error_messages.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_rails_default.html.erb (1.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 8.6ms | ActiveRecord: 0.6ms)
+Started GET "/signup" for 127.0.0.1 at 2017-04-07 23:46:01 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (1.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+Started GET "/signup" for 127.0.0.1 at 2017-04-07 23:46:01 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_rails_default.html.erb (1.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$X/3xE1sD8ztYnzfy5EDGD.4siuKklaXJDqfK2ySHCI/7Pej8QJG6O"], ["created_at", "2017-04-07 23:47:01.298740"], ["updated_at", "2017-04-07 23:47:01.298740"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$vJs/6R31jLaxrU4KpZA9X.YBRHlfSZdWbCqMB8i78W/TwGZkjcfxO"], ["created_at", "2017-04-07 23:47:01.304896"], ["updated_at", "2017-04-07 23:47:01.304896"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"richard@eample.org"}, "danger"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "richard@eample.org"]]
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$331xyENzxXYWeZth0dF.wO1.zw8nvlUsjRh7iYtyC7zdDc2/ymmme"], ["created_at", "2017-04-07 23:47:01.344594"], ["updated_at", "2017-04-07 23:47:01.344594"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$ca8t9KueXoTtymFd.B7tX.U8G6WTY8ti1kkdmYwx3QfTgxmem.XAe"], ["created_at", "2017-04-07 23:47:01.348962"], ["updated_at", "2017-04-07 23:47:01.348962"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$McFaR7zirVJF5o1fllx6IO28X2TrPPjRwCfvNxBVn9Oi6Kb.WeaD2"], ["created_at", "2017-04-07 23:47:01.357839"], ["updated_at", "2017-04-07 23:47:01.357839"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$q3psm1vrdwrMAiBM7S6qjO3CEwAvh8OPwZ1fmflyxJqA.POOmrO5i"], ["created_at", "2017-04-07 23:47:01.364252"], ["updated_at", "2017-04-07 23:47:01.364252"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$7NSU/Z07/4tGvM.W8Vr4guC3SRPzh4CPTSeqGyBUTnwbF2XgjF26a"], ["created_at", "2017-04-07 23:47:01.377620"], ["updated_at", "2017-04-07 23:47:01.377620"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$ZLD/8gsWdEnRLUL/tZmr2elC6FEObk/n1MfB9l/1ag/Jbpxmsdtai"], ["created_at", "2017-04-07 23:47:01.384109"], ["updated_at", "2017-04-07 23:47:01.384109"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$dLofIW/43bQy88BWvtlsXOxaDb3oY.Om1M7FPm8RUSxvtCZgwy0gW"], ["created_at", "2017-04-07 23:47:01.399762"], ["updated_at", "2017-04-07 23:47:01.399762"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$YtHgujhHq8TYTRJusfVk9uQCsnb6G7E4Ksv5P6inY/Sv801oJd6CK"], ["created_at", "2017-04-07 23:47:01.404241"], ["updated_at", "2017-04-07 23:47:01.404241"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$JuER8.6FZSgQdPywQ4V0MOra45CyWyCNggRk6neqJmHHI5SlpVNCW"], ["created_at", "2017-04-07 23:47:01.414561"], ["updated_at", "2017-04-07 23:47:01.414561"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$PTxhP0TZuVc1211/Z1.awuD90X.5ZMTuSU6vHimyA8tMpzoNmYBYS"], ["created_at", "2017-04-07 23:47:01.419257"], ["updated_at", "2017-04-07 23:47:01.419257"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"richard@eample.org"}, "danger"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "richard@eample.org"]]
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$ABof/srMP.bgO6OUuON2vuIQdq740IAuUx0QWQjpc0Pk/9h5XFqwa"], ["created_at", "2017-04-07 23:47:01.430048"], ["updated_at", "2017-04-07 23:47:01.430048"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$SMZnMDm9wTfAqj3nTu3M5OkOhjCVcDDoD8c8rXn/C5J7HfisvTmLa"], ["created_at", "2017-04-07 23:47:01.434838"], ["updated_at", "2017-04-07 23:47:01.434838"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('richarddoss0719@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Richard"], ["email", "richarddoss0719@tamu.edu"], ["password_digest", "$2a$04$j4s34Xlx78IgGOb6Xw//RuJOOwGGCusM4RTgIkIXHs.UWJrMMCtDm"], ["created_at", "2017-04-07 23:47:01.444735"], ["updated_at", "2017-04-07 23:47:01.444735"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('talk_to_nithin@tamu.edu') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Nithinthehero"], ["email", "talk_to_nithin@tamu.edu"], ["password_digest", "$2a$04$rM9MOns9YShNVQ99F9yScepvWI7E7aNQMAYz8M.qGeXrzMBOWRXbu"], ["created_at", "2017-04-07 23:47:01.449986"], ["updated_at", "2017-04-07 23:47:01.449986"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
