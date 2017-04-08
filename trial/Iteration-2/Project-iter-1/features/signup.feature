@@ -18,3 +18,12 @@ Scenario: Signup as an admin
   Then  I should be on the confirmation page for 
   And   I should see "Welcome to the Sample App"
   
+
+Scenario: Log in as admin
+  Given I am on the home page for the Polling App
+  When  I follow "Log in"
+  Then  I should be on the login page
+  And I fill in "Email" with "richarddoss0719@tamu.edu"
+  And I fill in "Password" with "123456"
+  And I press "Log in"
+  Then  I should be on the user profile page
