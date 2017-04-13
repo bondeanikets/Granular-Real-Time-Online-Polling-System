@@ -4,13 +4,12 @@ require 'rails_helper'
 describe SessionsController do
     describe 'Login as an admin' do
         before :each do 
-          @movie = FactoryGirl.create(:user, :name => "Richard", :email => "richarddoss0719@tamu.edu", :password => "123456") 
-          @another_lucas_movie = FactoryGirl.create(:user, :name => "Nithinthehero", :email => "talk_to_nithin@tamu.edu", :password => "qwerty")
-          @moviestwo=[@movie, @another_lucas_movie]
+          @user = FactoryGirl.create(:user, :name => "Richard", :email => "richarddoss0719@tamu.edu", :password => "123456") 
+          
         end
         it 'calls the model method that logs in the user' do
             print("Testing")
-            post  :create, {:session => {:password =>"123456", :email =>"richard@eample.org"}, :danger =>1}
+            post  :create, {:session => {:name => "Richard", :password =>"123456", :email =>"richarddoss0719@tamu.edu"}, :danger =>1}
         end
         it 'calls the model method that logs out the user' do
             delete  :destroy
