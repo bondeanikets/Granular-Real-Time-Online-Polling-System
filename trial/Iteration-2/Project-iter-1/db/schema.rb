@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170414052525) do
+ActiveRecord::Schema.define(version: 20170414073250) do
 
   create_table "ar_internal_metadata", primary_key: "key", force: :cascade do |t|
     t.string   "value"
@@ -48,5 +48,13 @@ ActiveRecord::Schema.define(version: 20170414052525) do
   end
 
   add_index "vote_options", ["poll_id"], name: "index_vote_options_on_poll_id"
+
+  create_table "votes", force: :cascade do |t|
+    t.integer  "vote_option_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "votes", ["vote_option_id"], name: "index_votes_on_vote_option_id"
 
 end

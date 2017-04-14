@@ -3,6 +3,7 @@ class PollsController < ApplicationController
     #@user=User.find_by_id(params[:id])
     #@polls = Pool.where(user_id: @user.id)
     @polls = Poll.all
+    
   end
 
   def new
@@ -44,7 +45,10 @@ end
   end
   
   def show
-    @poll = Poll.find_by_id(params[:id])
+    #@poll = Poll.find_by_id(params[:id])
+    
+    @poll = Poll.includes(:vote_options).find_by_id(params[:id])
+
   end
 
   private
