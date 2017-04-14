@@ -1,5 +1,7 @@
 class PollsController < ApplicationController
   def index
+    #@user=User.find_by_id(params[:id])
+    #@polls = Pool.where(user_id: @user.id)
     @polls = Poll.all
   end
 
@@ -39,6 +41,10 @@ end
     else
       render 'new'
     end
+  end
+  
+  def show
+    @poll = Poll.find_by_id(params[:id])
   end
 
   private
