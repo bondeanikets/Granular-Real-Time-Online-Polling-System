@@ -18,12 +18,12 @@
       <%= link_to 'Poller', user_path(:id), class: 'navbar-brand' %>
     </div>
     <ul class="nav navbar-nav">
-      <li><%= link_to 'Add poll', new_poll_path %></li>
+      <li><%= link_to 'Add poll', new_user_poll_path(params[:id]) %></li>
     </ul>
   </div>
     </div>
     <ul class="nav navbar-nav">
-      <li><%= link_to 'Click to Answer Polls', polls_path %></li>
+      <li><%= link_to 'Click to Answer Polls', user_polls_path(params[:id]) %></li>
     </ul>
   </div>
 </div>

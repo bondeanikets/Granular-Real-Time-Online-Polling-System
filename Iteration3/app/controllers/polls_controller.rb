@@ -1,8 +1,8 @@
 class PollsController < ApplicationController
   def index
     #@user=User.find_by_id(params[:id])
-    #@polls = Pool.where(user_id: @user.id)
-    @polls = Poll.all
+    @polls = Poll.where(user_id: params[:user_id])
+    #@polls = Poll.all
     
   end
 
@@ -36,9 +36,10 @@ end
 
   def create
     @poll = Poll.new(poll_params)
+    @poll.user_id=params[:user_id]
     if @poll.save
       flash[:success] = 'Poll was created!'
-      redirect_to polls_path
+      redirect_to user_polls_path
     else
       render 'new'
     end

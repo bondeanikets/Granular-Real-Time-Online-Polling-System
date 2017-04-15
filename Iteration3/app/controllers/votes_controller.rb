@@ -4,7 +4,7 @@ class VotesController < ApplicationController
       @poll = Poll.find_by_id(params[:poll][:id])
       @option = @poll.vote_options.find_by_id(params[:vote_option][:id])
       if @option && @poll 
-        #@option.votes.create({user_id: current_user.id})
+        @option.votes.create()
         render js: 'alert(\'Thanks for voting ! Results will anaylysed soon\');'
         #:flag=0;
         #redirect_to polls_path

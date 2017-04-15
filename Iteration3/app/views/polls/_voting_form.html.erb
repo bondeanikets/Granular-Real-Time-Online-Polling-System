@@ -3,6 +3,8 @@
 
   <%= render partial: 'polls/vote_option', collection: @poll.vote_options, as: :option %>
 
+  <p><b>Total votes: <%= @poll.votes_summary %></b></p>
+
   
     <%= submit_tag 'Vote', class: 'btn btn-lg btn-primary' %>
   

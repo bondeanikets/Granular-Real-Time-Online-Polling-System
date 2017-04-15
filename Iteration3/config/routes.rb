@@ -13,9 +13,11 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
   
   #polling
-  get '/polls', to: 'polls#index', as: 'polls'
-  resources :polls
-  resources :users
+  #get '/polls', to: 'polls#index', as: 'polls'
+  
+  resources :users do 
+    resources :polls
+   end
   resources :votes, only: [:create]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static_pages#home'

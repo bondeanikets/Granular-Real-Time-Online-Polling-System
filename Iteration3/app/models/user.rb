@@ -14,4 +14,8 @@ class User < ApplicationRecord
                                                   BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
   end
+  
+  def voted_for?(poll)
+    votes.any? {|v| v.vote_option.poll == poll}
+  end
 end
