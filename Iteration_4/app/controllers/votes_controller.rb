@@ -10,6 +10,7 @@ class VotesController < ApplicationController
           #:flag=0;
           #redirect_to poll_path
           print('hello.................')
+          flash[:success] = 'Thanks for Voting!'
           @poll=Poll.find_by_id params[:poll][:id]
           print(@poll.user_id)
           format.html { redirect_to user_polls_path(@poll.user_id) }
