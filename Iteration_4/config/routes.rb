@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
 
  get  '/signup',  to: 'users#new'
+ get '/participant', to: 'participants#new' ,as: 'participant'
 
   get '/help', to: 'static_pages#help'
   
   get  '/about',   to: 'static_pages#about'
   get  '/contact', to: 'static_pages#contact'
   post '/signup',  to: 'users#create' ,as: 'user_create'
+  post '/participant',  to: 'participants#create' ,as: 'participant_create'
   
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
