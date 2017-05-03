@@ -2,8 +2,17 @@ class PollsController < ApplicationController
     before_action :set_poll, only: [:show, :edit ,:update ,:destroy]
   def index
     #@user=User.find_by_id(params[:id])
+    print("111111111111111111111111")
+   # print(@participant.id)
+    print("111111111111111111111111")
     @polls = Poll.where(user_id: params[:user_id])
     #@polls = Poll.all
+    
+  end
+  def index1
+    
+    @polls = Poll.where(user_id: params[:user_id])
+    
     
   end
 
