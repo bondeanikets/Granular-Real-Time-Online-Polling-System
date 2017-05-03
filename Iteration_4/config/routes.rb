@@ -19,8 +19,11 @@ Rails.application.routes.draw do
   #polling
   #get '/polls', to: 'polls#index', as: 'polls'
   
+  
+  resources :participants
   resources :users do 
     resources :polls
+    
    end
   resources :votes, only: [:create]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
